@@ -19,7 +19,7 @@ export default function CV() {
 				<div className='body-left'>
 					<div className='left-box'>
 						<div>
-							<h1> Contact</h1>
+							<h1 className='title'> Contact</h1>
 							<div>
 								<div className='contact-adsress'> 40, incididunt ut labore, City</div>
 								<div className='contact-email'>incididunt@watever.ltd</div>
@@ -28,8 +28,9 @@ export default function CV() {
 								<div className='contact-github'>incididunt ut labore et dolore magna</div>
 							</div>
 						</div>
+						<div className='separator'></div>
 						<div>
-							<h1>Education</h1>
+							<h1 className='title'>Education</h1>
 							{/** edu 1 */}
 							<div className='education-item'>
 								<div className='item-degree'>Master degree </div>
@@ -67,8 +68,9 @@ export default function CV() {
 								<div>2002 - 2022 </div>
 							</div>
 						</div>
+						<div className='separator'></div>
 						<div>
-							<h1> Skills</h1>
+							<h1 className='title'> Skills</h1>
 							<div>
 								<div className='skills-item'> Lorem ipsum dolor sit amet </div>
 								<div className='skills-item'> Lorem ipsum dolor sit amet </div>
@@ -86,7 +88,7 @@ export default function CV() {
 				<div className='body-right'>
 					<div className='right-box'>
 						<div>
-							<h1> Profile </h1>
+							<h1 className='title'> Profile </h1>
 							{/* block 1 */}
 							<div>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -98,7 +100,7 @@ export default function CV() {
 							</div>
 						</div>
 						<div>
-							<h1> Work experience </h1>
+							<h1 className='title'> Work experience </h1>
 							<div>
 								{/* block 2 */}
 								<div className='experience-item'>
