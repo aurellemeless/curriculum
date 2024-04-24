@@ -1,42 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 body {
 	margin: 0px;
+	font-family: 'Barlow', sans-serif;
+	font-size: 10pt;
+}
+.cv-wrapper {
+	margin: 20px;
 }
 .header {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .name {
-	font-size: 48px;
+	font-family: 'Barlow', sans-serif;
+	font-size: 24pt;
 }
-
 .title {
-	font-size: 34px;
+	font-family: 'Barlow', sans-serif;
+	text-transform: uppercase;
+	font-size: 12pt;
+	padding-top: 15px;
 }
-
 .photo {
-	width: 148px;
-	height: 148px;
+	width: 128px;
+	height: 128px;
 	background-color: gray;
 }
 .photo img {
-	width: 148px;
-	height: 148px;
+	width: 128px;
+	height: 128px;
 	filter: grayscale(1);
 }
 
 .gray-rectangle {
 	padding: 0px;
 	margin: 0px;
-	height: 150px;
 	background-color: lightgrey;
+	min-height: 140px;
 }
 
 .body {
 	display: flex;
 	justify-content: space-between;
-	margin-top: -180px;
+	margin-top: -170px;
 }
 
 .left-box {
@@ -55,7 +63,55 @@ body {
 	border-bottom: lightgrey solid 1px;
 	margin: 15px;
 }
-.title {
+
+/*
+Education
+*/
+.education-item {
+	padding: 5px;
+}
+.item-school {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 5px 0px;
+}
+.item-degree {
 	text-transform: uppercase;
-	font-size: 16pt;
+	font-weight: 700;
+}
+/*
+Contact
+*/
+.contact-item {
+	margin-bottom: 5px;
+}
+/*
+Skills
+*/
+.skills-item {
+	margin-bottom: 5px;
+}
+
+/*
+Experience
+*/
+.experience-meta {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.experience-position {
+	font-family: 'Nunito Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.experience-description {
+	padding-bottom: 10px;
+}
+
+/*
+Profile
+*/
+#profile {
+	min-height: 150px;
 }

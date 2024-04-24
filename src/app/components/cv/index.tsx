@@ -2,7 +2,7 @@ import '~/app/page.module.css';
 
 export default function CV() {
 	return (
-		<div>
+		<div className='cv-wrapper'>
 			<div className='header'>
 				<div>
 					<div className='name'>Helena Rostow</div>
@@ -14,18 +14,18 @@ export default function CV() {
 					</div>
 				</div>
 			</div>
-			<div className='gray-rectangle'></div>
+			<div id='gray-rectangle' className='gray-rectangle'></div>
 			<div className='body'>
 				<div className='body-left'>
 					<div className='left-box'>
 						<div>
 							<h1 className='title'> Contact</h1>
-							<div>
-								<div className='contact-adsress'> 40, incididunt ut labore, City</div>
-								<div className='contact-email'>incididunt@watever.ltd</div>
-								<div className='contact-phone'>00 000 000 000 00</div>
-								<div className='contact-linkedin'> incididunt ut labore et dolore magna</div>
-								<div className='contact-github'>incididunt ut labore et dolore magna</div>
+							<div className='contact'>
+								<div className='contact-item'> 40, incididunt ut labore, City</div>
+								<div className='contact-item'>incididunt@watever.ltd</div>
+								<div className='contact-item'>00 000 000 000 00</div>
+								<div className='contact-item'> incididunt ut labore et dolore magna</div>
+								<div className='contact-item'>incididunt ut labore et dolore magna</div>
 							</div>
 						</div>
 						<div className='separator'></div>
@@ -71,7 +71,7 @@ export default function CV() {
 						<div className='separator'></div>
 						<div>
 							<h1 className='title'> Skills</h1>
-							<div>
+							<div className='skills'>
 								<div className='skills-item'> Lorem ipsum dolor sit amet </div>
 								<div className='skills-item'> Lorem ipsum dolor sit amet </div>
 								<div className='skills-item'> Lorem ipsum dolor sit amet </div>
@@ -87,7 +87,7 @@ export default function CV() {
 				</div>
 				<div className='body-right'>
 					<div className='right-box'>
-						<div>
+						<div id='profile'>
 							<h1 className='title'> Profile </h1>
 							{/* block 1 */}
 							<div>
@@ -104,9 +104,12 @@ export default function CV() {
 							<div>
 								{/* block 2 */}
 								<div className='experience-item'>
-									<div className='experience-company'> company x lorem ipsuo</div>
-									<div className='experience-location'> wanywhere</div>
-									<div className='experience-period'>2002</div>
+									<div className='experience-position'> Job position on company position </div>
+									<div className='experience-meta'>
+										<div className='experience-company'> company x lorem ipsuo</div>
+										<div className='experience-location'> wanywhere</div>
+										<div className='experience-period'>2002</div>
+									</div>
 									<div className='experience-description'>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -118,9 +121,12 @@ export default function CV() {
 								</div>
 								{/* block 3 */}
 								<div className='experience-item'>
-									<div className='experience-company'> company x lorem ipsuo</div>
-									<div className='experience-location'> wanywhere</div>
-									<div className='experience-period'>2002</div>
+									<div className='experience-position'> Job position on company position </div>
+									<div className='experience-meta'>
+										<div className='experience-company'> company x lorem ipsuo</div>
+										<div className='experience-location'> wanywhere</div>
+										<div className='experience-period'>2002</div>
+									</div>
 									<div className='experience-description'>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -132,9 +138,12 @@ export default function CV() {
 								</div>
 								{/* block 4 */}
 								<div className='experience-item'>
-									<div className='experience-company'> company x lorem ipsuo</div>
-									<div className='experience-location'> wanywhere</div>
-									<div className='experience-period'>2002</div>
+									<div className='experience-position'> Job position on company position </div>
+									<div className='experience-meta'>
+										<div className='experience-company'> company x lorem ipsuo</div>
+										<div className='experience-location'> wanywhere</div>
+										<div className='experience-period'>2002</div>
+									</div>
 									<div className='experience-description'>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
