@@ -115,3 +115,24 @@ Profile
 #profile {
 	min-height: 150px;
 }
+
+/*
+Page
+*/
+.page-wrapper {
+	display: flex;
+}
+
+.app {
+	position: fixed;
+	width: 40%;
+	height: 100%;
+	left: 0px;
+	z-index: 20;
+	background-color: lightgray;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+/*
+Form
+*/

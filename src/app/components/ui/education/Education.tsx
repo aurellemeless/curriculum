@@ -1,6 +1,6 @@
 import { EducationItem } from '~/app/types/EducationIntem';
 
-export default function Education({ degree, location, school, start, end }: EducationItem) {
+export default function Education({ degree, location, school, startDate, endDate }: EducationItem) {
 	return (
 		<div className='education-item'>
 			<div className='item-degree'>{degree} </div>
@@ -9,7 +9,7 @@ export default function Education({ degree, location, school, start, end }: Educ
 				<div> {location} </div>
 			</div>
 			<div>
-				{start} - {end}
+				{startDate} - {endDate}
 			</div>
 		</div>
 	);

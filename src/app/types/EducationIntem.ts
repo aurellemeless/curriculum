@@ -3,6 +3,6 @@ export interface EducationItem {
 	degree: string;
 	school: string;
 	location: string;
-	start: string;
-	end: string;
+	startDate: string;
+	endDate: string;
 }

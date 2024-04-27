@@ -1,4 +1,4 @@
-export interface SkillItem {
+export interface SimpleItem {
 	id?: string | number;
 	label: string;
 }

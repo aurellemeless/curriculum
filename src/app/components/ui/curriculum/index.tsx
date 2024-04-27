@@ -1,13 +1,14 @@
+'use client';
 import '~/app/page.module.css';
-import Experience from '../experience/Experience';
-import Education from '../education/Education';
-import Skill from '../skills/Skill';
-import Contact from '../contact/Contact';
-import Section from '../common/Section';
+import Experience from '~/app/components/ui/experience/Experience';
+import Education from '~/app/components/ui/education/Education';
+import Skill from '~/app/components/ui/skills/Skill';
+import Contact from '~/app/components/ui/contact/Contact';
+import Section from '~/app/components/common/Section';
 import Header from './Header';
 import { CVData } from './types';
 
-export default function CV({ experiences, educations, skills, contacts, profile }: CVData) {
+export default function Curriculum({ experiences, educations, skills, contacts, profile }: CVData) {
 	return (
 		<div className='cv-wrapper'>
 			<Header {...profile} />

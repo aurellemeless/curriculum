@@ -1,9 +1,9 @@
-import { ExperienceItem } from './types';
+import { ExperienceItem } from '~/app/types/ExperienceItem';
 
 export default function Experience({
 	description,
-	start,
-	end,
+	startDate,
+	endDate,
 	company,
 	location,
 	position,
@@ -14,7 +14,7 @@ export default function Experience({
 			<div className='experience-meta'>
 				<div className='experience-company'> {company}</div>
 				<div className='experience-location'> {location}</div>
-				<div className='experience-period'>{`${start} - ${end}`}</div>
+				<div className='experience-period'>{`${startDate} - ${endDate}`}</div>
 			</div>
 			<div className='experience-description'>{description}</div>
 		</div>

@@ -3,4 +3,6 @@ export interface ContactItem {
 	address: string;
 	email: string;
 	linkedIn?: string;
+	youtube?: string;
+	github?: string;
 }

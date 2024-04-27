@@ -2,8 +2,8 @@ export interface ExperienceItem {
 	id?: string | number;
 	position: string;
 	company: string;
-	start: string;
-	end: string;
+	startDate: string;
+	endDate: string;
 	description: string;
 	location: string;
 }
