@@ -3,7 +3,7 @@ import { Button, Form, Input, message } from 'antd';
 import { useEffect, useState } from 'react';
 import Skill from './Skill';
 import { SimpleItem } from '~/app/types/SimpleItem';
-import { StoreController } from '~/app/controllers/Controller';
+import { StoreController } from '~/app/controllers/StoreController';
 import { LOCAL_STORAGE_SKILLS } from '~/app/constants/constants';
 
 export default function SkillForm() {

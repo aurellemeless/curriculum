@@ -1,10 +1,9 @@
 'use client';
 
 import { Button, Form, Input, message } from 'antd';
-import ProfileController from './ProfileController';
 import { ProfileItem } from '~/app/types/ProfileItem';
 import { useEffect } from 'react';
-import { StoreController } from '~/app/controllers/Controller';
+import { StoreController } from '~/app/controllers/StoreController';
 import { LOCAL_STORAGE_PROFILE } from '~/app/constants/constants';
 
 export default function ProfileForm() {

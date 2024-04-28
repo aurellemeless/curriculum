@@ -3,7 +3,7 @@ import { Button, Form, Input, message } from 'antd';
 import { ContactItem } from '~/app/types/ContactItem';
 import { useEffect } from 'react';
 import { LOCAL_STORAGE_CONTACTS } from '~/app/constants/constants';
-import { StoreController } from '~/app/controllers/Controller';
+import { StoreController } from '~/app/controllers/StoreController';
 
 export default function ContactForm() {
 	const [form] = Form.useForm();

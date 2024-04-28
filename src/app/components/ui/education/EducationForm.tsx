@@ -3,7 +3,7 @@ import { Button, Form, Input, message } from 'antd';
 import { EducationItem } from '~/app/types/EducationIntem';
 import { useEffect, useState } from 'react';
 import Education from './Education';
-import { StoreController } from '~/app/controllers/Controller';
+import { StoreController } from '~/app/controllers/StoreController';
 import { LOCAL_STORAGE_EDUCATIONS } from '~/app/constants/constants';
 
 export default function EducationForm() {

@@ -3,7 +3,7 @@ import { Button, Form, Input, message } from 'antd';
 import { ExperienceItem } from '~/app/types/ExperienceItem';
 import { useEffect, useState } from 'react';
 import Experience from './Experience';
-import { StoreController } from '~/app/controllers/Controller';
+import { StoreController } from '~/app/controllers/StoreController';
 import { LOCAL_STORAGE_EXPERIENCES } from '~/app/constants/constants';
 
 export default function ExperienceForm() {
