@@ -47,7 +47,10 @@ export function App() {
 	return (
 		<div>
 			<div>
-				<h1>Details of your resume</h1>
+				<h1>Resume wizard</h1>
+				<div style={{ paddingBottom: 10 }}>
+					Details of your resume, fill informations to get a beautifull resume
+				</div>
 			</div>
 			<div>
 				<Tabs defaultActiveKey='1' items={items} onChange={onChange} />

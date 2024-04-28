@@ -79,14 +79,13 @@ export default function ExperienceForm() {
 						<Input.TextArea placeholder='describe your role' />
 					</Form.Item>
 					<Button htmlType='button' onClick={onFinish}>
-						{' '}
-						Add{' '}
+						Add
 					</Button>
 				</Form>
 			</div>
 			<div>
 				{experiences.map((xp) => (
-					<Experience key={xp.id} {...xp} />
+					<Experience key={xp.id} {...xp} editable={true} />
 				))}
 			</div>
 		</div>

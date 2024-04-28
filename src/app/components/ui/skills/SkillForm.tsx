@@ -51,7 +51,7 @@ export default function SkillForm() {
 			</div>
 			<div>
 				{others.map((o) => (
-					<Skill key={o.id} {...o} />
+					<Skill key={o.id} {...o} editable={true} />
 				))}
 			</div>
 		</div>

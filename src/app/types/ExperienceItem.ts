@@ -1,5 +1,7 @@
-export interface ExperienceItem {
-	id?: string | number;
+import { Editable } from './Editable';
+
+export interface ExperienceItem extends Editable {
+	id?: any;
 	position: string;
 	company: string;
 	startDate: string;

@@ -124,6 +124,7 @@ Page
 }
 
 .app {
+	overflow-x: scroll;
 	position: fixed;
 	width: 40%;
 	height: 100%;

@@ -52,18 +52,18 @@ export default function ProfileForm() {
 					</Form.Item>
 
 					<Form.Item
-						name='description'
-						label='Desciption'
-						rules={[{ required: true, message: 'Please describe yourself here!' }]}
-					>
-						<Input.TextArea placeholder='Describe yourself here' />
-					</Form.Item>
-					<Form.Item
 						name='position'
 						label='Position'
 						rules={[{ required: true, message: 'Please input the position are you looking for!' }]}
 					>
 						<Input placeholder='Which position are you looking for ?' />
+					</Form.Item>
+					<Form.Item
+						name='description'
+						label='Desciption'
+						rules={[{ required: true, message: 'Please describe yourself here!' }]}
+					>
+						<Input.TextArea placeholder='Describe yourself here' />
 					</Form.Item>
 				</Form>
 			</div>

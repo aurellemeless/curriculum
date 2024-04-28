@@ -10,14 +10,23 @@ export class StoreController {
 
 	save(data: any) {
 		if (this.isArray) {
-			const experiences = getLocalData(this.storageKey) || [];
-			experiences.push(data);
-			storeLocalData(this.storageKey, experiences);
+			const storeData = getLocalData(this.storageKey) || [];
+			storeData.push(data);
+			storeLocalData(this.storageKey, storeData);
 		} else {
 			storeLocalData(this.storageKey, data);
 		}
 	}
 
+	remove(id: string | number) {
+		if (this.isArray) {
+			const storeData = getLocalData(this.storageKey) || [];
+			storeLocalData(
+				this.storageKey,
+				storeData.filter((d: any) => d.id !== id)
+			);
+		}
+	}
 	getLocalData() {
 		if (this.isArray) {
 			return (getLocalData(this.storageKey) || []) as any[];

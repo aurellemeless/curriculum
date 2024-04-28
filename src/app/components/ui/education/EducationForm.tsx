@@ -75,7 +75,7 @@ export default function EducationForm() {
 			</div>
 			<div>
 				{educations.map((edu) => (
-					<Education key={edu.id} {...edu} />
+					<Education key={edu.id} {...edu} editable={true} />
 				))}
 			</div>
 		</div>

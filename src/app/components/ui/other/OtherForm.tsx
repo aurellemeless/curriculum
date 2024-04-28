@@ -51,7 +51,7 @@ export default function OtherForm() {
 			</div>
 			<div>
 				{others.map((o) => (
-					<Other key={o.id} {...o} />
+					<Other key={o.id} {...o} editable={true} />
 				))}
 			</div>
 		</div>
