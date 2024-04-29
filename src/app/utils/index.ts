@@ -15,7 +15,7 @@ export const getLocalData = (key: string) => {
 	const storage = localStorage.getItem(LOCAL_STORAGE) ? localStorage.getItem(LOCAL_STORAGE) : null;
 	if (storage) {
 		const storedData = JSON.parse(storage);
-		return storedData[key];
+		return Object.keys(storedData).includes(key) ? storedData[key] : null;
 	}
 	return null;
 };

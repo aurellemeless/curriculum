@@ -1,11 +1,11 @@
 'use client';
 import Curriculum from '~/app/components/ui/curriculum';
-import { DUMMY_DATA } from '~/app/constants/dummy';
-import { App } from './components/ui/app/App';
+import CvData from '~/app/data/cvdata.json';
 import { useEffect, useState } from 'react';
 import { EditOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { LOCAL_STORAGE } from './constants/constants';
+import { App } from './components/ui/app/App';
 
 export default function Home() {
 	const [isAppOpen, setIsAppOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function Home() {
 	 * for dev purposes : should be removed later
 	 */
 	const loadDummyOnLocal = () => {
-		localStorage.setItem(LOCAL_STORAGE, JSON.stringify(DUMMY_DATA));
+		localStorage.setItem(LOCAL_STORAGE, JSON.stringify(CvData));
 	};
 	useEffect(() => {
 		loadDummyOnLocal();
@@ -42,7 +42,7 @@ export default function Home() {
 							</Button>
 						</div>
 					)}
-					<Curriculum {...DUMMY_DATA} />
+					<Curriculum {...CvData} />
 				</div>
 				{isAppOpen && (
 					<div className='app'>
